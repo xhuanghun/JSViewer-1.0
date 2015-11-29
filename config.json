@@ -1,0 +1,200 @@
+{
+  "theme": {
+    "name": "FoldableTheme",
+    "styles": [
+      "cyan",
+      "red",
+      "purple",
+      "green",
+      "default",
+      "black"
+    ],
+    "version": "1.1"
+  },
+  "title": "JSViewer1.0",
+  "subtitle": "with Web AppBuilder for ArcGIS",
+  "logo": "images/app-logo.png",
+  "geometryService": "http://tools.arcgisonline.cn/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+  "links": [
+    {
+      "label": "narutogis",
+      "url": "http://www.narutogis.com/Login"
+    }
+  ],
+  "widgetOnScreen": {
+    "widgets": [
+      {
+        "uri": "themes/FoldableTheme/widgets/HeaderController/Widget",
+        "positionRelativeTo": "browser",
+        "position": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "height": 40
+        },
+        "version": "1.1",
+        "id": "themes/FoldableTheme/widgets/HeaderController/Widget_1",
+        "name": "HeaderController",
+        "label": "页眉控制器"
+      },
+      {
+        "uri": "widgets/Scalebar/Widget",
+        "position": {
+          "left": 25,
+          "bottom": 25
+        },
+        "version": "1.1",
+        "id": "widgets/Scalebar/Widget_2",
+        "positionRelativeTo": "map",
+        "name": "Scalebar",
+        "label": "比例尺"
+      },
+
+      {
+        "uri": "widgets/Coordinate/Widget",
+        "position": {
+          "left": 200,
+          "bottom": 20
+        },
+        "version": "1.1",
+        "id": "widgets/Coordinate/Widget_4",
+        "positionRelativeTo": "map",
+        "name": "Coordinate",
+        "label": "坐标"
+      },
+      {
+        "position": {
+          "left": 55,
+          "top": 45,
+          "width": 400,
+          "height": 410
+        },
+        "placeholderIndex": 1,
+        "id": "_5",
+        "positionRelativeTo": "map",
+        "name": "About",
+        "label": "关于",
+        "version": "1.1",
+        "uri": "widgets/About/Widget"
+      },
+      {
+        "uri": "widgets/OverviewMap/Widget",
+        "position": {
+          "right": 0,
+          "top": 0
+        },
+        "version": "1.1",
+        "id": "widgets/OverviewMap/Widget_8",
+        "positionRelativeTo": "map",
+        "name": "OverviewMap",
+        "label": "总览图"
+      },
+      {
+        "uri": "widgets/HomeButton/Widget",
+        "position": {
+          "left": 7,
+          "top": 75
+        },
+        "version": "1.1",
+        "id": "widgets/HomeButton/Widget_9",
+        "positionRelativeTo": "map",
+        "name": "HomeButton",
+        "label": "主目录按钮"
+      },
+      {
+        "uri": "widgets/MyLocation/Widget",
+        "position": {
+          "left": 7,
+          "top": 110
+        },
+        "version": "1.1",
+        "id": "widgets/MyLocation/Widget_10",
+        "positionRelativeTo": "map",
+        "name": "MyLocation",
+        "label": "我的位置"
+      },
+      {
+        "uri": "widgets/Splash/Widget",
+        "visible": false,
+        "positionRelativeTo": "browser",
+        "version": "1.1",
+        "id": "widgets/Splash/Widget_12",
+        "position": {
+          "left": 0,
+          "top": 0
+        },
+        "name": "Splash",
+        "label": "启动"
+      }
+    ],
+    "panel": {
+      "uri": "jimu/PreloadWidgetIconPanel",
+      "positionRelativeTo": "map"
+    }
+  },
+  "map": {
+    "3D": false,
+    "2D": true,
+    "position": {
+      "left": 0,
+      "top": 40,
+      "right": 0,
+      "bottom": 0
+    },
+    "basemaps": [{
+      "label": "Arcgis",
+      "url": "http://server.arcgisonline.com/ArcGIS/rest/services/ESRI_StreetMap_World_2D/MapServer",
+      "type": "tiled"
+    }
+    ],
+    "mapOptions": {
+      "extent": {
+        "xmin": 12706095.984770682,
+        "ymin": 4713005.574349563,
+        "xmax": 13296801.339358494,
+        "ymax": 5076234.332760702,
+        "spatialReference": {"wkid": 102100}
+      }
+    },
+    "id": "map"
+  },
+  "widgetPool": {
+    "panel": {
+      "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+      "positionRelativeTo": "map",
+      "position": {
+        "top": 5,
+        "right": 5,
+        "bottom": 5
+      }
+    },
+    "widgets": [
+      {
+        "name": "Bookmark",
+        "label": "书签",
+        "version": "1.1",
+        "uri": "widgets/Bookmark/Widget",
+        "index": 4,
+        "id": "widgets/Bookmark/Widget_16"
+      },
+      {
+        "name": "Draw",
+        "label": "绘图",
+        "version": "1.1",
+        "uri": "widgets/Draw/Widget",
+        "index": 5,
+        "id": "widgets/Draw/Widget_17"
+      }
+    ],
+    "groups": []
+  },
+  "wabVersion": "1.1",
+  "isWebTier": false,
+  "httpProxy": {
+    "useProxy": true,
+    "alwaysUseProxy": false,
+    "url": "",
+    "rules": []
+  },
+  "appId": ""
+}
